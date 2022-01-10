@@ -5,7 +5,7 @@ node ('Ubuntu-app-agent'){
        checkout scm
     }  
     stage('SAST'){
-     #   build 'SECURITY-SAST-SNYK'
+     //   build 'SECURITY-SAST-SNYK'
     }
 
     
@@ -21,19 +21,19 @@ node ('Ubuntu-app-agent'){
         			}
          }
     stage('SECURITY-IMAGE-SCANNER'){
-     #   build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
+     //   build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
     }
   
     
     stage('Pull-image-server') {
     
-     #    sh "docker-compose down"
-      #   sh "docker-compose up -d"	
+     //    sh "docker-compose down"
+      //   sh "docker-compose up -d"	
       }
     
     stage('DAST')
         {
-      #  build 'SECURITY-DAST-OWASP_ZAP'
+      //  build 'SECURITY-DAST-OWASP_ZAP'
         }
  
 }
